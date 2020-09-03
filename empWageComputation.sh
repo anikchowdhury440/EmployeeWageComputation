@@ -30,7 +30,6 @@ while [[ $totalEmpHrs -lt $MAX_HRS_IN_MONTH && $totalWorkingDays -lt $NUM_WORKIN
 do
 	((totalWorkingDays++))
 	workHours="$( getWorkingHours $((RANDOM%3)) )"
-	empCheck=$((RANDOM%3))
 	totalEmpHrs=$(($totalEmpHrs+$workHours))
 done
 
